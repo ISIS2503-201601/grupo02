@@ -1,7 +1,7 @@
 # SATT
 Proyecto de Arquitectura de Software Uniandes. 2016-01
 
-##Integrantes
+##GRUPO 2, Integrantes:
 
 Mariana Villamizar
 Alberto Consuegra
