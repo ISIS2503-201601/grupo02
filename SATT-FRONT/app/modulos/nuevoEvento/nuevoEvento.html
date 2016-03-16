@@ -1,0 +1,44 @@
+<div class="container" style="text-align:center;">
+    <div class="jumbotron" style="text-align:center;">
+        <h2>Registro de un nuevo Evento Sísmico</h2>
+    </div>
+    <form name="postEvento" ng-submit="postForm()" class="form-inline" style="margin-bottom:30px;">
+        <div class="form-group">
+            <label class="sr-only" for="lat">Latitud</label>
+            <input type="number" step="any" class="form-control" id="lat" placeholder="Latitude" data-ng-model="form.lat" required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="lng">Longitud</label>
+            <input type="number" step="any" class="form-control" id="lng" placeholder="Longitude" data-ng-model="form.lng" required>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="dis">Distancia a la costa</label>
+            <input type="number" class="form-control" id="dis" placeholder="Distance" data-ng-model="form.distancia" required>
+        </div>
+        <button type="submit" class="btn btn-danger" ng-disabled="processingForm">Reportar Evento Sísmico</button>
+    </form>
+    <div class="jumbotron" ng-show="sent && !error">
+        <h3>Esta es la alerta generada por el Sistema:</h3>
+        <table class="table table-hover table-striped table-bordered">
+            <thead>
+                <th>ID</th>
+                <th>Perfil</th>
+                <th>Zona</th>
+                <th>Tiempo de llegada</th>
+                <th>Altura de ola</th>
+            </thead>
+            <tbody>
+                <tr ng-class="{success: mensaje.perfil == 'Informativo', warning: mensaje.perfil == 'Alerta', danger: mensaje.perfil == 'Alarma'}">
+                    <td>{{mensaje.id}}</td>
+                    <td>{{mensaje.perfil}}</td>
+                    <td>{{mensaje.zona}}</td>
+                    <td>{{mensaje.tLlegada}}</td>
+                    <td>{{mensaje.altura}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="jumbotron" ng-show="sent && error">
+        <h3>{{mensaje}}</h3>
+    </div>
+</div>

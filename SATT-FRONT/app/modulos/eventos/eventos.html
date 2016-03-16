@@ -1,0 +1,23 @@
+<div class="container tabla">
+    <div class="jumbotron" style="text-align:center;">
+        <h2>Eventos Sísmicos Registrados en el Sistema</h2>
+    </div>
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+            <th>Id</th>
+            <th>Latitud</th>
+            <th>Longitud</th>
+            <th>Distancia a la costa</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="evento in eventos">
+                <td>{{evento._id.$oid}}</td>
+                <td>{{evento.lat}}</td>
+                <td>{{evento.lng}}</td>
+                <td>{{evento.distancia}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>{{error}}</h3>
+</div>
+<link rel="stylesheet" href="/modulos/eventos/eventos.css">
