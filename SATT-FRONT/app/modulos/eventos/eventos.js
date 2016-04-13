@@ -12,11 +12,12 @@ angular.module('myApp.eventos', ['ngRoute'])
 .controller('EventosCtrl', ['$scope', '$http', function ($scope, $http) {
     $http({
         method: 'GET',
-        url: 'http://uniandes-satt.herokuapp.com/eventos'
+//        url: 'http://uniandes-satt.herokuapp.com/eventos'
+        url: 'http://localhost:8010/eventos'
     }).then(function successCallback(response) {
         $scope.eventos = response.data;
     }, function errorCallback(response) {
-        // called asynchronously if an error occurs
-        // or server returns response with an error status.
+        console.log("ER0ROOOROROOROROROR");
+        $scope.error = "Oh oh! Hubo un problema. Lo sentimos, intenta mas tarde :(";
     });
 }]);

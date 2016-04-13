@@ -13,6 +13,7 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
 
 .controller('NuevoEventoCtrl', ['$scope', '$http', '$interval', function ($scope, $http, $interval) {
     $scope.error = false;
+    $scope.mensaje = "Oh oh! Hubo un problema. Lo sentimos, intenta mas tarde :(";
     $scope.sent = false;
     $scope.formData = {};
     $scope.postForm = function () {
@@ -21,7 +22,8 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
         $scope.sent = false;
         $http({
             method: 'POST',
-            url: 'http://uniandes-satt.herokuapp.com/eventos',
+//            url: 'http://uniandes-satt.herokuapp.com/eventos',
+            url: 'http://localhost:8010/eventos',
             data: JSON.stringify($scope.form),
         }).then(function successCallback(response) {
             $scope.mensaje = response.data;
@@ -47,7 +49,8 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
             if ($scope.mensaje.id != undefined && $scope.mensaje.perfil != "Informativo") {
                 $http({
                     method: 'GET',
-                    url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
+//                    url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
+                    url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
                 }).then(function successCallback(response) {
                     $scope.mensaje = response.data;
                     if ($scope.mensaje.perfil === "Informativo") {
@@ -56,6 +59,7 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
                 }, function errorCallback(response) {
                     $scope.error = true;
                     $scope.defError = response.data;
+                    console.log("ER0ROOOROROOROROROR");
                 }).finally(function () {
                     $scope.processingForm = false;
                     $scope.sent = true;
