@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,12 +25,12 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-    <nav class="container">
+    <nav class="container" ng-controller="IndexCtrl">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">SATT</a>
+                    <a class="navbar-brand" href="#/">SATT <small>for {{$storage.userInfo.name}}</small></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,13 +38,13 @@
                         <li><a href="#/alertas">Alertas</a></li>
                         <li><a href="#/eventos">Eventos</a></li>
                         <li><a href="#/nuevoEvento">Nuevo Evento</a></li>
+                        <li><a href="" ng-click="logOut()">Log Out</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </nav>
     <div ng-view></div>
-    </nav>
 
     <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -51,10 +52,13 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.js"></script>
+    <script src="modulos/login/login.js"></script>
     <script src="modulos/home/home.js"></script>
     <script src="modulos/eventos/eventos.js"></script>
     <script src="modulos/nuevoEvento/nuevoEvento.js"></script>
     <script src="modulos/alertas/alertas.js"></script>
+    <script src="bower_components/angular-base64/angular-base64.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.min.js"></script>
 </body>
 
 </html>
