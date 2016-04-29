@@ -9,15 +9,27 @@ angular.module('myApp.alertas', ['ngRoute'])
     });
 }])
 
-.controller('AlertasCtrl', ['$scope', '$http', function ($scope, $http) {
+.controller('AlertasCtrl', ['$scope', '$http', '$localStorage', function ($scope, $http, $localStorage) {
     $http({
         method: 'GET',
+<<<<<<< HEAD
         url: 'http://uniandes-satt.herokuapp.com/alertas'
         //url: 'http://localhost:8010/alertas'
+=======
+        //        url: 'http://uniandes-satt.herokuapp.com/alertas'
+        url: 'http://localhost:8010/alertas'
+        //url: 'http://localhost:8080/alertas',
+        headers: {
+            "Authorization": $localStorage.userInfo !== undefined ? $localStorage.userInfo.accessToken : null
+        }
+>>>>>>> origin/master
     }).then(function successCallback(response) {
         $scope.alertas = response.data;
     }, function errorCallback(response) {
-        console.log("ER0ROOOROROOROROROR");
-        $scope.error = "Oh oh! Hubo un problema. Lo sentimos, intenta mas tarde :(";
+        if(response.status == 401) {
+            $scope.error = "Oh oh! Parece que requieres permisos que no te han otorgado :(";
+        } else {
+            $scope.error = "Oh oh! Hubo un problema. Lo sentimos, intenta mas tarde :(";   
+        }
     });
 }]);
