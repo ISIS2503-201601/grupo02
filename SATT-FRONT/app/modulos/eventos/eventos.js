@@ -12,8 +12,8 @@ angular.module('myApp.eventos', ['ngRoute'])
 .controller('EventosCtrl', ['$scope', '$http', function ($scope, $http) {
     $http({
         method: 'GET',
-//        url: 'http://uniandes-satt.herokuapp.com/eventos'
-        url: 'http://localhost:8010/eventos'
+        url: 'http://uniandes-satt.herokuapp.com/eventos'
+        //url: 'http://localhost:8010/eventos'
     }).then(function successCallback(response) {
         $scope.eventos = response.data;
     }, function errorCallback(response) {

@@ -22,8 +22,8 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
         $scope.sent = false;
         $http({
             method: 'POST',
-//            url: 'http://uniandes-satt.herokuapp.com/eventos',
-            url: 'http://localhost:8010/eventos',
+            url: 'http://uniandes-satt.herokuapp.com/eventos',
+            //url: 'http://localhost:8010/eventos',
             data: JSON.stringify($scope.form),
         }).then(function successCallback(response) {
             $scope.mensaje = response.data;
@@ -49,8 +49,8 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
             if ($scope.mensaje.id != undefined && $scope.mensaje.perfil != "Informativo") {
                 $http({
                     method: 'GET',
-//                    url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
-                    url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
+                    url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
+                    //url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
                 }).then(function successCallback(response) {
                     $scope.mensaje = response.data;
                     if ($scope.mensaje.perfil === "Informativo") {

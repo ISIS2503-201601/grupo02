@@ -12,8 +12,8 @@ angular.module('myApp.alertas', ['ngRoute'])
 .controller('AlertasCtrl', ['$scope', '$http', function ($scope, $http) {
     $http({
         method: 'GET',
-//        url: 'http://uniandes-satt.herokuapp.com/alertas'
-        url: 'http://localhost:8010/alertas'
+        url: 'http://uniandes-satt.herokuapp.com/alertas'
+        //url: 'http://localhost:8010/alertas'
     }).then(function successCallback(response) {
         $scope.alertas = response.data;
     }, function errorCallback(response) {
