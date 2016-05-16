@@ -12,17 +12,12 @@ angular.module('myApp.eventos', ['ngRoute'])
 .controller('EventosCtrl', ['$scope', '$http', '$localStorage', function ($scope, $http, $localStorage) {
     $http({
         method: 'GET',
-<<<<<<< HEAD
-        url: 'http://uniandes-satt.herokuapp.com/eventos'
-        //url: 'http://localhost:8010/eventos'
-=======
-        //        url: 'http://uniandes-satt.herokuapp.com/eventos'
-        url: 'http://localhost:8010/eventos'
+        url: 'http://uniandes-satt.herokuapp.com/eventos',
+//        url: 'http://localhost:8010/eventos'
         //url: 'http://localhost:8080/eventos',
         headers: {
             "Authorization": $localStorage.userInfo !== undefined ? $localStorage.userInfo.accessToken : null
         }
->>>>>>> origin/master
     }).then(function successCallback(response) {
         $scope.eventos = response.data;
     }, function errorCallback(response) {

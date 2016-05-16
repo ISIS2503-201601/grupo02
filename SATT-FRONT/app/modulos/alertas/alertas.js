@@ -12,17 +12,12 @@ angular.module('myApp.alertas', ['ngRoute'])
 .controller('AlertasCtrl', ['$scope', '$http', '$localStorage', function ($scope, $http, $localStorage) {
     $http({
         method: 'GET',
-<<<<<<< HEAD
-        url: 'http://uniandes-satt.herokuapp.com/alertas'
-        //url: 'http://localhost:8010/alertas'
-=======
-        //        url: 'http://uniandes-satt.herokuapp.com/alertas'
-        url: 'http://localhost:8010/alertas'
+        url: 'http://uniandes-satt.herokuapp.com/alertas',
+//        url: 'http://localhost:8010/alertas'
         //url: 'http://localhost:8080/alertas',
         headers: {
             "Authorization": $localStorage.userInfo !== undefined ? $localStorage.userInfo.accessToken : null
         }
->>>>>>> origin/master
     }).then(function successCallback(response) {
         $scope.alertas = response.data;
     }, function errorCallback(response) {

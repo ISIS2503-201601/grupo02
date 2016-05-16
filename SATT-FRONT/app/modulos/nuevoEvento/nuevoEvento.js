@@ -22,14 +22,9 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
         $scope.sent = false;
         $http({
             method: 'POST',
-<<<<<<< HEAD
             url: 'http://uniandes-satt.herokuapp.com/eventos',
-            //url: 'http://localhost:8010/eventos',
-=======
-            //            url: 'http://uniandes-satt.herokuapp.com/eventos',
-            url: 'http://localhost:8010/eventos',
+//            url: 'http://localhost:8010/eventos',
             //url: 'http://localhost:8080/eventos',
->>>>>>> origin/master
             data: JSON.stringify($scope.form),
             headers: {
                 "Authorization": $localStorage.userInfo !== undefined ? $localStorage.userInfo.accessToken : null
@@ -63,17 +58,12 @@ angular.module('myApp.nuevoEvento', ['ngRoute'])
             if ($scope.mensaje.id != undefined && $scope.mensaje.perfil != "Informativo") {
                 $http({
                     method: 'GET',
-<<<<<<< HEAD
                     url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
-                    //url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
-=======
-                    //                    url: 'http://uniandes-satt.herokuapp.com/alertas/'+$scope.mensaje.id,
-                    url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
+//                    url: 'http://localhost:8010/alertas/'+$scope.mensaje.id,
                     //url: 'http://localhost:8080/alertas/' + $scope.mensaje.id,
                     headers: {
                         "Authorization": $localStorage.userInfo !== undefined ? $localStorage.userInfo.accessToken : null
                     }
->>>>>>> origin/master
                 }).then(function successCallback(response) {
                     $scope.mensaje = response.data;
                     if ($scope.mensaje.perfil === "Informativo") {
