@@ -25,9 +25,9 @@ angular.module('myApp.login', ['ngRoute', 'ngStorage', 'base64'])
             $scope.loginForm.password = $base64.encode($scope.loginForm.password);
             $scope.loginPrms = $http({
                 method: 'POST',
-                //url: 'https://uniandes-satt.herokuapp.com/auth',
-                url: 'http://localhost:8081/auth',
-                //url: 'http://localhost:8080/auth',
+                url: 'https://uniandes-satt.herokuapp.com/auth',
+//                url: 'http://localhost:8081/auth',
+//                url: 'http://localhost:8080/auth',
                 data: {
                     email: $scope.loginForm.email,
                     password: $scope.loginForm.password
