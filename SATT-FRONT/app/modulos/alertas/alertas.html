@@ -1,17 +1,17 @@
 <div class="container tabla">
-    <div class="jumbotron" style="text-align:center;">
+    <div class="page-header" style="text-align:center;">
         <h2>Alertas Registradas en el Sistema</h2>
     </div>
     <table class="table table-striped table-hover table-bordered">
         <thead>
-            <th>ID</th>
+            <th>Identificador</th>
             <th>Perfil</th>
             <th>Zona</th>
             <th>Tiempo de llegada</th>
             <th>Altura de ola</th>
         </thead>
         <tbody>
-            <tr ng-repeat="alerta in alertas" ng-class="{success: alerta.perfil == 'Informativo', warning: alerta.perfil == 'Alerta', danger: alerta.perfil == 'Alarma'}" >
+            <tr ng-repeat="alerta in filteredAlertas" ng-class="{success: alerta.perfil == 'Informativo', warning: alerta.perfil == 'Alerta', danger: alerta.perfil == 'Alarma'}" >
                 <td>{{alerta._id.$oid}}</td>
                 <td>{{alerta.perfil}}</td>
                 <td>{{alerta.zona}}</td>
@@ -20,6 +20,7 @@
             </tr>
         </tbody>
     </table>
+    <uib-pagination total-items="alertas.length" ng-model="currentPage" max-size="maxSize" class="pagination" boundary-link-numbers="true" boundary-links="true"></uib-pagination>
     <h3>{{error}}</h3>
 </div>
 <link rel="stylesheet" href="/modulos/alertas/alertas.css">

@@ -28,3 +28,67 @@
   content: "";
   padding: 0;
 }
+
+body, html{
+    background-color: #FFF;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.page-header{
+    color: #2C3E50;
+}
+
+nav.navbar.navbar-default{
+    background-color: #2980B9;
+    width: 100% !important;
+    margin: 0;
+}
+
+ul.nav.navbar-nav li a{
+    color: #fff;
+}
+
+div.navbar-header a.navbar-brand, div.navbar-header a.navbar-brand small{
+    color: #fff;
+}
+
+nav, nav.container.ng-scope {
+    width: 100% !important;
+}
+
+#logout{
+    color: #000;
+}
+
+.navbar-default .navbar-brand:hover{
+    color: #333;
+}
+
+.navbar-default .navbar-brand:focus{
+    color: #fff;
+}
+
+div.container{
+    padding-top: 20px;
+}
+
+div.container.home, div.container.home.ng-scope{
+    background-image: url("img/1.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#home{
+    width: 100%;
+    height: 650px;
+    padding: 0;
+    margin: 0;
+}
+
+::selected{
+    background: #fff;
+}

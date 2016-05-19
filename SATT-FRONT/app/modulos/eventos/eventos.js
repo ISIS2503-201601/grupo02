@@ -1,6 +1,13 @@
 'use strict';
 
-angular.module('myApp.eventos', ['ngRoute'])
+angular.module('myApp.eventos', ['ngRoute','ui.bootstrap'])
+
+.run(function(uibPaginationConfig){
+    uibPaginationConfig.firstText='Primero';
+    uibPaginationConfig.previousText='Anterior';
+    uibPaginationConfig.lastText='Último';
+    uibPaginationConfig.nextText='Siguiente';
+  })
 
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/eventos', {
@@ -20,6 +27,19 @@ angular.module('myApp.eventos', ['ngRoute'])
         }
     }).then(function successCallback(response) {
         $scope.eventos = response.data;
+        
+        //Paginacion
+        $scope.filteredEventos = []
+        ,$scope.currentPage = 1
+        ,$scope.numPerPage = 10
+        ,$scope.maxSize = 5;
+  
+        $scope.$watch('currentPage + numPerPage', function() {
+        var begin = (($scope.currentPage - 1) * $scope.numPerPage)
+        , end = begin + $scope.numPerPage;
+    $scope.filteredEventos = $scope.eventos.slice(begin, end);
+  });
+        
     }, function errorCallback(response) {
         if(response.status == 401) {
             $scope.error = "Oh oh! Parece que requieres permisos que no te han otorgado :(";

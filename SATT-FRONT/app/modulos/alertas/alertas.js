@@ -1,6 +1,13 @@
 'use strict';
 
-angular.module('myApp.alertas', ['ngRoute'])
+angular.module('myApp.alertas', ['ngRoute','ui.bootstrap'])
+
+.run(function(uibPaginationConfig){
+    uibPaginationConfig.firstText='Primero';
+    uibPaginationConfig.previousText='Anterior';
+    uibPaginationConfig.lastText='Último';
+    uibPaginationConfig.nextText='Siguiente';
+  })
 
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/alertas', {
@@ -20,6 +27,21 @@ angular.module('myApp.alertas', ['ngRoute'])
         }
     }).then(function successCallback(response) {
         $scope.alertas = response.data;
+        
+        //Paginacion
+        $scope.filteredAlertas = []
+        ,$scope.currentPage = 1
+        ,$scope.numPerPage = 10
+        ,$scope.maxSize = 5;
+  
+        $scope.$watch('currentPage + numPerPage', function() {
+        var begin = (($scope.currentPage - 1) * $scope.numPerPage)
+        , end = begin + $scope.numPerPage;
+    $scope.filteredAlertas = $scope.alertas.slice(begin, end);
+  });
+        
+        
+        
     }, function errorCallback(response) {
         if(response.status == 401) {
             $scope.error = "Oh oh! Parece que requieres permisos que no te han otorgado :(";

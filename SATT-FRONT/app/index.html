@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app.css">
-    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700' rel='stylesheet' type='text/css'>    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
@@ -30,7 +30,9 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">SATT <small>for {{$storage.userInfo.name}}</small></a>
+                    <a class="navbar-brand" href="#/">
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> SATT
+                    </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,7 +40,16 @@
                         <li><a href="#/alertas">Alertas</a></li>
                         <li><a href="#/eventos">Eventos</a></li>
                         <li><a href="#/nuevoEvento">Nuevo Evento</a></li>
-                        <li><a href="" ng-click="logOut()">Log Out</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div class="btn-group" uib-dropdown is-open="status.isopen">
+                            <button id="single-button" type="button" class="btn btn-primary navbar-btn" uib-dropdown-toggle ng-disabled="disabled">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{$storage.userInfo.name}} <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+                                <li role="menuitem"><a id="logout" href="" ng-click="logOut()">Cerrar sesión</a></li>
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -59,6 +70,7 @@
     <script src="modulos/alertas/alertas.js"></script>
     <script src="bower_components/angular-base64/angular-base64.js"></script>
     <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.min.js"></script>
 </body>
 
 </html>
