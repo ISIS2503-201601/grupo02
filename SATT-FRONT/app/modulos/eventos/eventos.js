@@ -31,7 +31,7 @@ angular.module('myApp.eventos', ['ngRoute','ui.bootstrap'])
         //Paginacion
         $scope.filteredEventos = []
         ,$scope.currentPage = 1
-        ,$scope.numPerPage = 10
+        ,$scope.numPerPage = 9
         ,$scope.maxSize = 5;
   
         $scope.$watch('currentPage + numPerPage', function() {

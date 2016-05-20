@@ -2,6 +2,27 @@
     <div class="page-header" style="text-align:center;">
         <h2>Alertas Registradas en el Sistema</h2>
     </div>
+    <div class="form-inline filtros">
+        <div class="form-group">
+            <h4>Filtros:</h4>
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="bPerfil">Perfil</label>
+            <input ng-model="search.perfil" class="form-control" id="bPerfil" placeholder="Perfil">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="bZona">Zona</label>
+            <input ng-model="search.zona" class="form-control" id="bZona" placeholder="Zona">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="bTiempo">Tiempo máximo</label>
+            <input ng-model="search.tLlegada" class="form-control" id="bTiempo" placeholder="Tiempo">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="bDist">Distancia mínima</label>
+            <input ng-model="search.altura" class="form-control" id="bDist" placeholder="Distancia">
+        </div>
+    </div>
     <table class="table table-striped table-hover table-bordered">
         <thead>
             <th>Identificador</th>
@@ -11,7 +32,7 @@
             <th>Altura de ola</th>
         </thead>
         <tbody>
-            <tr ng-repeat="alerta in filteredAlertas" ng-class="{success: alerta.perfil == 'Informativo', warning: alerta.perfil == 'Alerta', danger: alerta.perfil == 'Alarma'}" >
+            <tr ng-repeat="alerta in filteredAlertas | filter:search" ng-class="{success: alerta.perfil == 'Informativo', warning: alerta.perfil == 'Alerta', danger: alerta.perfil == 'Alarma'}" >
                 <td>{{alerta._id.$oid}}</td>
                 <td>{{alerta.perfil}}</td>
                 <td>{{alerta.zona}}</td>

@@ -31,7 +31,7 @@ angular.module('myApp.alertas', ['ngRoute','ui.bootstrap'])
         //Paginacion
         $scope.filteredAlertas = []
         ,$scope.currentPage = 1
-        ,$scope.numPerPage = 10
+        ,$scope.numPerPage = 9
         ,$scope.maxSize = 5;
   
         $scope.$watch('currentPage + numPerPage', function() {
