@@ -1,0 +1,16 @@
+PODS:
+  - Gloss (0.7.2)
+  - MBProgressHUD (0.9.2)
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - Gloss
+  - MBProgressHUD
+  - SWRevealViewController
+
+SPEC CHECKSUMS:
+  Gloss: 45eb51aaa6f2725341aec8d8caa65cfcc31f7f3b
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+
+COCOAPODS: 0.39.0

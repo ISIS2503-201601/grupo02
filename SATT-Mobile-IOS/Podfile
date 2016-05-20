@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'SATT Mobile' do
+	pod 'MBProgressHUD'
+	pod 'SWRevealViewController'
+	pod 'Gloss'
+end
+
+target 'SATT MobileTests' do
+
+end
+
+target 'SATT MobileUITests' do
+
+end
+

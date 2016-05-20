@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C4340D21CEBDF120001B207 /* bell-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340D11CEBDF120001B207 /* bell-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340D41CEBDFA10001B207 /* pyramid-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340D31CEBDFA10001B207 /* pyramid-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340D61CEBDFCD0001B207 /* earth-america-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340D51CEBDFCD0001B207 /* earth-america-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340D81CEBDFE00001B207 /* new-sign-badge-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340D71CEBDFE00001B207 /* new-sign-badge-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340DA1CEBE0C00001B207 /* list-fat-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340D91CEBE0C00001B207 /* list-fat-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340DC1CEBE12C0001B207 /* MainTabBarControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340DB1CEBE12C0001B207 /* MainTabBarControler.swift */; settings = {ASSET_TAGS = (); }; };
+		9C4340DE1CEBE2900001B207 /* file-list-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4340DD1CEBE2900001B207 /* file-list-7.png */; settings = {ASSET_TAGS = (); }; };
+		9C4340E01CEBEA0E0001B207 /* AlertasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340DF1CEBEA0E0001B207 /* AlertasTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C4340E21CEBEA1C0001B207 /* EventosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340E11CEBEA1C0001B207 /* EventosTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C4340E41CEBEA320001B207 /* NuevoEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340E31CEBEA320001B207 /* NuevoEventoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C4340E61CEBEA4F0001B207 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340E51CEBEA4F0001B207 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9C4340E81CEBED850001B207 /* SATTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4340E71CEBED850001B207 /* SATTModel.swift */; settings = {ASSET_TAGS = (); }; };
+		9CB4D9921CDC072C00943C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4D9911CDC072C00943C80 /* AppDelegate.swift */; };
+		9CB4D9941CDC072C00943C80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4D9931CDC072C00943C80 /* ViewController.swift */; };
+		9CB4D9971CDC072C00943C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB4D9951CDC072C00943C80 /* Main.storyboard */; };
+		9CB4D9991CDC072C00943C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB4D9981CDC072C00943C80 /* Assets.xcassets */; };
+		9CB4D99C1CDC072C00943C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB4D99A1CDC072C00943C80 /* LaunchScreen.storyboard */; };
+		9CB4D9A71CDC072D00943C80 /* SATT_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4D9A61CDC072D00943C80 /* SATT_MobileTests.swift */; };
+		9CB4D9B21CDC072D00943C80 /* SATT_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4D9B11CDC072D00943C80 /* SATT_MobileUITests.swift */; };
+		9CB4D9C01CDC181800943C80 /* JSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB4D9BF1CDC181800943C80 /* JSONMapper.swift */; settings = {ASSET_TAGS = (); }; };
+		D226C589B5CDCC234D586492 /* Pods_SATT_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB7E3E4599308DA74CF3AD /* Pods_SATT_Mobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CB4D9A31CDC072D00943C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CB4D9861CDC072C00943C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB4D98D1CDC072C00943C80;
+			remoteInfo = "SATT Mobile";
+		};
+		9CB4D9AE1CDC072D00943C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CB4D9861CDC072C00943C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB4D98D1CDC072C00943C80;
+			remoteInfo = "SATT Mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C4340D11CEBDF120001B207 /* bell-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell-7.png"; sourceTree = "<group>"; };
+		9C4340D31CEBDFA10001B207 /* pyramid-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pyramid-7.png"; sourceTree = "<group>"; };
+		9C4340D51CEBDFCD0001B207 /* earth-america-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-america-7.png"; sourceTree = "<group>"; };
+		9C4340D71CEBDFE00001B207 /* new-sign-badge-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new-sign-badge-7.png"; sourceTree = "<group>"; };
+		9C4340D91CEBE0C00001B207 /* list-fat-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-fat-7.png"; sourceTree = "<group>"; };
+		9C4340DB1CEBE12C0001B207 /* MainTabBarControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarControler.swift; sourceTree = "<group>"; };
+		9C4340DD1CEBE2900001B207 /* file-list-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "file-list-7.png"; sourceTree = "<group>"; };
+		9C4340DF1CEBEA0E0001B207 /* AlertasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertasTableViewController.swift; sourceTree = "<group>"; };
+		9C4340E11CEBEA1C0001B207 /* EventosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosTableViewController.swift; sourceTree = "<group>"; };
+		9C4340E31CEBEA320001B207 /* NuevoEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevoEventoViewController.swift; sourceTree = "<group>"; };
+		9C4340E51CEBEA4F0001B207 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C4340E71CEBED850001B207 /* SATTModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SATTModel.swift; sourceTree = "<group>"; };
+		9CB4D98E1CDC072C00943C80 /* SATT Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SATT Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB4D9911CDC072C00943C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CB4D9931CDC072C00943C80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CB4D9961CDC072C00943C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CB4D9981CDC072C00943C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CB4D99B1CDC072C00943C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CB4D99D1CDC072C00943C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB4D9A21CDC072D00943C80 /* SATT MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SATT MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB4D9A61CDC072D00943C80 /* SATT_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATT_MobileTests.swift; sourceTree = "<group>"; };
+		9CB4D9A81CDC072D00943C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB4D9AD1CDC072D00943C80 /* SATT MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SATT MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CB4D9B11CDC072D00943C80 /* SATT_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATT_MobileUITests.swift; sourceTree = "<group>"; };
+		9CB4D9B31CDC072D00943C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB4D9BF1CDC181800943C80 /* JSONMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMapper.swift; sourceTree = "<group>"; };
+		9FEDFC81DC43EE2C7A83C321 /* Pods-SATT Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SATT Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-SATT Mobile/Pods-SATT Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		C2DB7E3E4599308DA74CF3AD /* Pods_SATT_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SATT_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDFA2587881757C53F6B3C4C /* Pods-SATT Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SATT Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SATT Mobile/Pods-SATT Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CB4D98B1CDC072C00943C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D226C589B5CDCC234D586492 /* Pods_SATT_Mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D99F1CDC072D00943C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D9AA1CDC072D00943C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CB4D9851CDC072C00943C80 = {
+			isa = PBXGroup;
+			children = (
+				9CB4D9901CDC072C00943C80 /* SATT Mobile */,
+				9CB4D9A51CDC072D00943C80 /* SATT MobileTests */,
+				9CB4D9B01CDC072D00943C80 /* SATT MobileUITests */,
+				9CB4D98F1CDC072C00943C80 /* Products */,
+				BCA7B556B93DAFF01589DC88 /* Pods */,
+				D3D6D091E205512FD7BEC175 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CB4D98F1CDC072C00943C80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CB4D98E1CDC072C00943C80 /* SATT Mobile.app */,
+				9CB4D9A21CDC072D00943C80 /* SATT MobileTests.xctest */,
+				9CB4D9AD1CDC072D00943C80 /* SATT MobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CB4D9901CDC072C00943C80 /* SATT Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				9C4340D91CEBE0C00001B207 /* list-fat-7.png */,
+				9C4340D11CEBDF120001B207 /* bell-7.png */,
+				9C4340D71CEBDFE00001B207 /* new-sign-badge-7.png */,
+				9C4340DD1CEBE2900001B207 /* file-list-7.png */,
+				9C4340D51CEBDFCD0001B207 /* earth-america-7.png */,
+				9C4340D31CEBDFA10001B207 /* pyramid-7.png */,
+				9CB4D9911CDC072C00943C80 /* AppDelegate.swift */,
+				9CB4D9931CDC072C00943C80 /* ViewController.swift */,
+				9C4340E51CEBEA4F0001B207 /* LoginViewController.swift */,
+				9C4340DB1CEBE12C0001B207 /* MainTabBarControler.swift */,
+				9C4340DF1CEBEA0E0001B207 /* AlertasTableViewController.swift */,
+				9C4340E11CEBEA1C0001B207 /* EventosTableViewController.swift */,
+				9C4340E31CEBEA320001B207 /* NuevoEventoViewController.swift */,
+				9CB4D9951CDC072C00943C80 /* Main.storyboard */,
+				9CB4D9981CDC072C00943C80 /* Assets.xcassets */,
+				9CB4D99A1CDC072C00943C80 /* LaunchScreen.storyboard */,
+				9C4340E71CEBED850001B207 /* SATTModel.swift */,
+				9CB4D9BF1CDC181800943C80 /* JSONMapper.swift */,
+				9CB4D99D1CDC072C00943C80 /* Info.plist */,
+			);
+			path = "SATT Mobile";
+			sourceTree = "<group>";
+		};
+		9CB4D9A51CDC072D00943C80 /* SATT MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CB4D9A61CDC072D00943C80 /* SATT_MobileTests.swift */,
+				9CB4D9A81CDC072D00943C80 /* Info.plist */,
+			);
+			path = "SATT MobileTests";
+			sourceTree = "<group>";
+		};
+		9CB4D9B01CDC072D00943C80 /* SATT MobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CB4D9B11CDC072D00943C80 /* SATT_MobileUITests.swift */,
+				9CB4D9B31CDC072D00943C80 /* Info.plist */,
+			);
+			path = "SATT MobileUITests";
+			sourceTree = "<group>";
+		};
+		BCA7B556B93DAFF01589DC88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDFA2587881757C53F6B3C4C /* Pods-SATT Mobile.debug.xcconfig */,
+				9FEDFC81DC43EE2C7A83C321 /* Pods-SATT Mobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3D6D091E205512FD7BEC175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2DB7E3E4599308DA74CF3AD /* Pods_SATT_Mobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CB4D98D1CDC072C00943C80 /* SATT Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB4D9B61CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT Mobile" */;
+			buildPhases = (
+				B0D934E8FEFE4D929F0CF80D /* Check Pods Manifest.lock */,
+				9CB4D98A1CDC072C00943C80 /* Sources */,
+				9CB4D98B1CDC072C00943C80 /* Frameworks */,
+				9CB4D98C1CDC072C00943C80 /* Resources */,
+				218D0990925D1665E35C451F /* Embed Pods Frameworks */,
+				14574DB49AAFA11997D73F13 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SATT Mobile";
+			productName = "SATT Mobile";
+			productReference = 9CB4D98E1CDC072C00943C80 /* SATT Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CB4D9A11CDC072D00943C80 /* SATT MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB4D9B91CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT MobileTests" */;
+			buildPhases = (
+				9CB4D99E1CDC072D00943C80 /* Sources */,
+				9CB4D99F1CDC072D00943C80 /* Frameworks */,
+				9CB4D9A01CDC072D00943C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CB4D9A41CDC072D00943C80 /* PBXTargetDependency */,
+			);
+			name = "SATT MobileTests";
+			productName = "SATT MobileTests";
+			productReference = 9CB4D9A21CDC072D00943C80 /* SATT MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CB4D9AC1CDC072D00943C80 /* SATT MobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CB4D9BC1CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT MobileUITests" */;
+			buildPhases = (
+				9CB4D9A91CDC072D00943C80 /* Sources */,
+				9CB4D9AA1CDC072D00943C80 /* Frameworks */,
+				9CB4D9AB1CDC072D00943C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CB4D9AF1CDC072D00943C80 /* PBXTargetDependency */,
+			);
+			name = "SATT MobileUITests";
+			productName = "SATT MobileUITests";
+			productReference = 9CB4D9AD1CDC072D00943C80 /* SATT MobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CB4D9861CDC072C00943C80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Daniel Soto Rey";
+				TargetAttributes = {
+					9CB4D98D1CDC072C00943C80 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9CB4D9A11CDC072D00943C80 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9CB4D98D1CDC072C00943C80;
+					};
+					9CB4D9AC1CDC072D00943C80 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9CB4D98D1CDC072C00943C80;
+					};
+				};
+			};
+			buildConfigurationList = 9CB4D9891CDC072C00943C80 /* Build configuration list for PBXProject "SATT Mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CB4D9851CDC072C00943C80;
+			productRefGroup = 9CB4D98F1CDC072C00943C80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CB4D98D1CDC072C00943C80 /* SATT Mobile */,
+				9CB4D9A11CDC072D00943C80 /* SATT MobileTests */,
+				9CB4D9AC1CDC072D00943C80 /* SATT MobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CB4D98C1CDC072C00943C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4340D21CEBDF120001B207 /* bell-7.png in Resources */,
+				9C4340DA1CEBE0C00001B207 /* list-fat-7.png in Resources */,
+				9C4340D61CEBDFCD0001B207 /* earth-america-7.png in Resources */,
+				9C4340D81CEBDFE00001B207 /* new-sign-badge-7.png in Resources */,
+				9CB4D99C1CDC072C00943C80 /* LaunchScreen.storyboard in Resources */,
+				9C4340DE1CEBE2900001B207 /* file-list-7.png in Resources */,
+				9C4340D41CEBDFA10001B207 /* pyramid-7.png in Resources */,
+				9CB4D9991CDC072C00943C80 /* Assets.xcassets in Resources */,
+				9CB4D9971CDC072C00943C80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D9A01CDC072D00943C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D9AB1CDC072D00943C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14574DB49AAFA11997D73F13 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SATT Mobile/Pods-SATT Mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		218D0990925D1665E35C451F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SATT Mobile/Pods-SATT Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0D934E8FEFE4D929F0CF80D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CB4D98A1CDC072C00943C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4340E21CEBEA1C0001B207 /* EventosTableViewController.swift in Sources */,
+				9CB4D9941CDC072C00943C80 /* ViewController.swift in Sources */,
+				9C4340E01CEBEA0E0001B207 /* AlertasTableViewController.swift in Sources */,
+				9C4340E41CEBEA320001B207 /* NuevoEventoViewController.swift in Sources */,
+				9C4340E61CEBEA4F0001B207 /* LoginViewController.swift in Sources */,
+				9C4340DC1CEBE12C0001B207 /* MainTabBarControler.swift in Sources */,
+				9CB4D9C01CDC181800943C80 /* JSONMapper.swift in Sources */,
+				9CB4D9921CDC072C00943C80 /* AppDelegate.swift in Sources */,
+				9C4340E81CEBED850001B207 /* SATTModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D99E1CDC072D00943C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB4D9A71CDC072D00943C80 /* SATT_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB4D9A91CDC072D00943C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CB4D9B21CDC072D00943C80 /* SATT_MobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CB4D9A41CDC072D00943C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CB4D98D1CDC072C00943C80 /* SATT Mobile */;
+			targetProxy = 9CB4D9A31CDC072D00943C80 /* PBXContainerItemProxy */;
+		};
+		9CB4D9AF1CDC072D00943C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CB4D98D1CDC072C00943C80 /* SATT Mobile */;
+			targetProxy = 9CB4D9AE1CDC072D00943C80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CB4D9951CDC072C00943C80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB4D9961CDC072C00943C80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CB4D99A1CDC072C00943C80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CB4D99B1CDC072C00943C80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CB4D9B41CDC072D00943C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CB4D9B51CDC072D00943C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CB4D9B71CDC072D00943C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDFA2587881757C53F6B3C4C /* Pods-SATT Mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SATT Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CB4D9B81CDC072D00943C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEDFC81DC43EE2C7A83C321 /* Pods-SATT Mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SATT Mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CB4D9BA1CDC072D00943C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SATT MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SATT Mobile.app/SATT Mobile";
+			};
+			name = Debug;
+		};
+		9CB4D9BB1CDC072D00943C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SATT MobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SATT Mobile.app/SATT Mobile";
+			};
+			name = Release;
+		};
+		9CB4D9BD1CDC072D00943C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SATT MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SATT Mobile";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9CB4D9BE1CDC072D00943C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SATT MobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arquisoft.SATT-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "SATT Mobile";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CB4D9891CDC072C00943C80 /* Build configuration list for PBXProject "SATT Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB4D9B41CDC072D00943C80 /* Debug */,
+				9CB4D9B51CDC072D00943C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB4D9B61CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB4D9B71CDC072D00943C80 /* Debug */,
+				9CB4D9B81CDC072D00943C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB4D9B91CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB4D9BA1CDC072D00943C80 /* Debug */,
+				9CB4D9BB1CDC072D00943C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CB4D9BC1CDC072D00943C80 /* Build configuration list for PBXNativeTarget "SATT MobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CB4D9BD1CDC072D00943C80 /* Debug */,
+				9CB4D9BE1CDC072D00943C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CB4D9861CDC072C00943C80 /* Project object */;
+}
